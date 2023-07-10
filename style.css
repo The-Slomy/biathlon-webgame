@@ -1,0 +1,80 @@
+/* ----- Shared CSS ------- */
+* {
+  box-sizing: border-box;
+}
+
+/* ------ Content ----- */
+
+.race-section {
+  display: flex;
+  gap: 20px;
+}
+
+.turns {
+  flex: 1;
+}
+
+.turn-card {
+  background-color: rgba(0, 0, 0, 0.103);
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.turn-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.205);
+  margin-bottom: 10px;
+}
+
+.shooting {
+  flex: 1;
+}
+
+.shooting-card {
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 5px 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.shooting-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+.shooting-targets {
+  background-color: rgba(0, 0, 255, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 6px;
+  padding: 0px 15px;
+  margin: 10px 10px;
+}
+
+.shooting-targets.finished {
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+.shooting-targets .target {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.shooting-targets .target.missed {
+  border: 2px solid red;
+}
+
+.shooting-targets .target.success {
+  background-color: white;
+}

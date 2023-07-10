@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Biathlon Webgame - Test race</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stopwatch">
+      <button class="start-stopwatch" data-id="start-btn">Start</button>
+      <button class="stop-stopwatch" data-id="stop-btn">Stop</button>
+      <button class="reset-stopwatch" data-id="reset-btn">Reset</button>
+      <button class="stopwatch-speed-1" data-id="x1-btn">x1</button>
+      <button class="stopwatch-speed-5" data-id="x5-btn">x5</button>
+      <button class="stopwatch-speed-10" data-id="x10-btn">x10</button>
+      <p class="stopwatch-content" data-id="stopwatch-time"></p>
+    </div>
+    <h1>Race test Page</h1>
+    <h2>Race 1 : Sprint</h2>
+    <section class="race-section">
+      <article class="turns" data-id="intermediate">
+        <div class="turn-card">
+          <div class="turns-header">
+            <h3 class="turns-title">Turn 1</h3>
+          </div>
+          <div class="turns-content" data-id="intermediate-content"></div>
+        </div>
+
+        <div class="turn-card">
+          <div class="turns-header">
+            <h3 class="turns-title">Turn 2</h3>
+          </div>
+          <div class="turns-content" data-id="intermediate-content"></div>
+        </div>
+
+        <div class="turn-card">
+          <div class="turns-header">
+            <h3 class="turns-title">Finish</h3>
+          </div>
+          <div class="turns-content" data-id="intermediate-content"></div>
+        </div>
+      </article>
+
+      <article class="shooting" data-id="shooting">
+        <div class="shooting-card">
+          <div class="shooting-header">
+            <h3 class="shooting-title">Shooting 1</h3>
+          </div>
+          <div class="shooting-content" data-id="shooting-content"></div>
+        </div>
+
+        <div class="shooting-card">
+          <div class="shooting-header">
+            <h3 class="shooting-title">Shooting 2</h3>
+          </div>
+          <div class="shooting-content" data-id="shooting-content"></div>
+        </div>
+      </article>
+    </section>
+
+    <h2>Race 2 : Individual</h2>
+    <section class="race-section">
+      <article class="turns"></article>
+      <article class="shooting"></article>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
